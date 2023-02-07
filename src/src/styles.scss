@@ -1,0 +1,143 @@
+* {
+    border-radius: 0 !important;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+
+    font-family: Verdana;
+}
+
+@import '~bootstrap/scss/bootstrap';
+
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+router-outlet+* {
+    animation: fade .5s;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+    transition: color .2s linear;
+
+    &:hover {
+        color: #4854d8;
+        text-decoration: none;
+    }
+}
+
+.highlighted-link {
+    color: #5562FF;
+
+    &:hover {
+        color: #4854d8;
+    }
+}
+
+.icon-link {
+    fill: black;
+    transition: fill .2s linear;
+
+    &:hover {
+        fill: #4854d8;
+    }
+
+    &.angular:hover {
+        fill: #B71C1C;
+    }
+
+    &.cpp:hover {
+        fill: #0080CC;
+    }
+
+    &.csharp:hover {
+        fill: #903BA6;
+    }
+
+    &.css:hover {
+        fill: #1F99ED;
+    }
+
+    &.html:hover {
+        fill: #E65100;
+    }
+
+    &.js:hover {
+        fill: #DC9C25;
+    }
+}
+
+.icon-link-light {
+    fill: whitesmoke;
+    transition: fill .2s linear;
+
+    &:hover {
+        fill: #4854d8;
+    }
+
+    &.angular:hover {
+        fill: #B71C1C;
+    }
+
+    &.cpp:hover {
+        fill: #0080CC;
+    }
+
+    &.csharp:hover {
+        fill: #903BA6;
+    }
+
+    &.css:hover {
+        fill: #1F99ED;
+    }
+
+    &.html:hover {
+        fill: #E65100;
+    }
+
+    &.js:hover {
+        fill: #DC9C25;
+    }
+}
+
+.btn {
+    font-size: .9em;
+    font-weight: 700;
+}
+
+.btn-orange {
+    color: white;
+    border-color: #FE481C;
+    background-color: #FE481C;
+
+    transition: color .2s linear, background-color .2s linear;
+
+    &:hover {
+        color: #FE481C;
+        background-color: transparent;
+    }
+}
+
+.btn-outline-blue {
+    color: #5562FF;
+    border-color: #5562FF;
+
+    transition: color .2s linear, background-color .2s linear;
+
+    &:hover {
+        color: white;
+        background-color: #5562FF;
+    }
+}

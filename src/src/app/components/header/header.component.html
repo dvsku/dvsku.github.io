@@ -1,0 +1,25 @@
+<div class="container" style="border-bottom: 1px solid #00000022;">
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand" routerLink="/">NIKOLA <span style="font-size:.8em;color: #FE481C">dvsku</span>
+            STOJŠIN</a>
+        <button class="navbar-toggler" type="button" (click)="isMenuCollapsed = !isMenuCollapsed" aria-expanded="false">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" [ngbCollapse]="isMenuCollapsed">
+            <ul class="navbar-nav mr-auto ml-lg-4">
+                <li class="nav-item">
+                    <a class="nav-link" routerLink="/">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" routerLink="projects">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" routerLink="about">About me</a>
+                </li>
+            </ul>
+            <a class="btn btn-outline-blue my-2 px-4 my-sm-0 d-none d-lg-block"
+                href="mailto:nikola.stojsin@hotmail.com">Contact me</a>
+        </div>
+    </nav>
+</div>

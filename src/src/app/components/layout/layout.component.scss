@@ -1,0 +1,13 @@
+.layout {
+    display: grid;
+    grid-template-rows: auto 1fr;
+    min-height: 100%;
+
+    .layout-header {
+        grid-row: 1/2;
+    }
+
+    .layout-content {
+        grid-row: 2/3;
+    }
+}
